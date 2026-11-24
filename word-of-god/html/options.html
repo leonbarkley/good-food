@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Word Box</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/options.css">
+</head>
+
+<body>
+    <div class="row">
+        <form class="col offset-s1 s10">
+            <div class="row valign-wrapper">
+                <div class="col s6 primary-text"><i class="material-icons">refresh</i>Refresh</div>
+                <div class="col s6">
+                    <select id="refreshRate">
+                        <option class="primary-text" value="always">Always</option>
+                        <option class="primary-text" value="hourly">Hourly</option>
+                        <option class="primary-text" value="daily">Daily</option>
+                        <option class="primary-text" value="weekly">Weekly</option>
+                        <option class="primary-text" value="monthly">Monthly</option>
+                    </select> 
+                </div>
+            </div>
+
+            <div class="row valign-wrapper">
+                <div class="col s6 primary-text"><i class="material-icons">language</i>Language</div>
+                <div class="col s6">
+                    <select id="language">
+                        <option class="primary-text" value="malayalam">Malayalam</option>
+                        <option class="primary-text" value="english">English</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="row valign-wrapper">
+                <div class="col s6 primary-text"><i class="material-icons">link</i>Most Used Links</div>
+                <div class="col s6">
+                    <div class="switch">
+                        <label class="secondary-text">
+                            Hide
+                            <input type="checkbox" id="mostUsedLinks">
+                            <span class="lever"></span>
+                            Show
+                        </label>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col offset-s1 s4">
+            <button class="btn waves-effect waves-light" id="save" type="button">Save</button>
+        </div>
+        <div class="col s6 green-text">
+            <div id="status"></div>
+        </div>
+    </div>
+    </form>
+    </div>
+
+
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/options.js"></script>
+</body>
+
+</html>

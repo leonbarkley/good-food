@@ -1,0 +1,87 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Special Elite', cursive;
+    background: #000;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-property: color, background-color;
+    transition-duration: 3s;
+}
+
+#wog {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+blockquote {
+    font-weight: 100;
+    font-size: 2.5vmax;
+    max-width: 70%;
+    line-height: 1.4;
+    position: relative;
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+blockquote:before,
+blockquote:after {
+    position: absolute;
+    font-size: 8vmax;
+    width: 4vmax;
+    height: 4vmax;
+}
+
+blockquote:before {
+    content: '“';
+    left: -5vmax;
+    top: -2vmax;
+}
+
+blockquote:after {
+    content: '”';
+    right: -5vmax;
+    bottom: 1vmax;
+}
+
+cite {
+    line-height: 3;
+    text-align: left;
+    font-size: 2vmax;
+}
+
+div#mostVisited {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 1s linear 1s;
+}
+
+div#mostVisited.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+div#mostVisited a {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    color: #f1efe6;
+    text-decoration: none;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.15);
+    margin: 5px;
+    border-radius: 20px;
+}

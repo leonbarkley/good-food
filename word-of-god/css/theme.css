@@ -1,0 +1,27 @@
+    @font-face {
+        font-family: 'Special Elite';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Special Elite Regular'), local('SpecialElite-Regular'), url(https://fonts.gstatic.com/s/specialelite/v10/XLYgIZbkc4JPUL5CVArUVL0ntnAOTQ.ttf) format('truetype');
+    }
+
+    :root {
+        /*Exact colors in logo*/
+        /* --theme-primary: #4b2746;
+        --theme-secondary: #fdc473; */
+
+        /*Color Palette: https://www.w3schools.com/colors/tryit.asp?filename=trycolors_palettes22*/
+        /* --theme-primary: #d64161; */
+        --theme-primary: #880e4f;
+        --theme-secondary: #feb236;
+        --theme-highlight: #6b5b95;
+        --theme-optional: #ff7b25;
+    }
+
+    .primary-text {
+        color: var(--theme-primary) !important;
+    }
+
+    .secondary-text {
+        color: var(--theme-secondary) !important;
+    }
